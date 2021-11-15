@@ -15,6 +15,7 @@ import "hardhat/console.sol";
 import { Base64 } from "./libraries/Base64.sol";
 
 contract MyEpicGame is ERC721 {
+    // Definition of our Character NFT
     struct CharacterAttributes {
         uint characterIndex;
         string name;
@@ -52,8 +53,6 @@ contract MyEpicGame is ERC721 {
         string memory bossImageURI,
         uint bossHp,
         uint bossAttackDamage
-
-
     ) ERC721("Squid Games", "SQDG") {
         boss = CharacterAttributes({
             characterIndex: 456,
